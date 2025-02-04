@@ -100,7 +100,14 @@ export default function ColorGame() {
       </p>
 
       {/* Buttons */}
-      <div className="flex gap-4 mt-4">
+      <div className="flex gap-4 mt-4 flex-wrap justify-center">
+      <button
+          onClick={newColor}
+          className="px-6 py-2 bg-green-600 text-white rounded-md hover:bg-green-800 transition cursor-pointer min-[317px]:order-2"
+        >
+          New Color
+        </button>
+
         <button
           onClick={resetGame}
           className="px-6 py-2 bg-white border border-red-600 text-red-600 rounded-md hover:bg-red-600 hover:text-white cursor-pointer transition"
@@ -109,12 +116,7 @@ export default function ColorGame() {
           Reset Game
         </button>
 
-        <button
-          onClick={newColor}
-          className="px-6 py-2 bg-green-600 text-white rounded-md hover:bg-green-800 transition cursor-pointer"
-        >
-          New Color
-        </button>
+     
       </div>
     </div>
   );
